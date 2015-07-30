@@ -10,16 +10,4 @@ buildscript {
 
 apply plugin: 'org.asciidoctor.gradle.asciidoctor'
 
-asciidoctor {
-    //baseDir = project.file('src/asciidoc')    
-    /*options = [
-        attributes : [
-            encoding: 'utf-8',
-            linkcss: true,
-            sectanchors: '',
-            linkattrs: ''
-        ]
-    ]*/
-}
-
 defaultTasks 'asciidoctor'

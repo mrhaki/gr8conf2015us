@@ -1,6 +1,6 @@
-= Asciidoctor session at JFall 2014
+= Asciidoctor session at Gr8Conf 2015 US
 
-Presentation and code samples for Awesome Asciidoctor at JFall 2014.
+Presentation and code samples for Awesome Asciidoctor at Gr8Conf 2015 US.
 
 == Presentation
 
