@@ -1,0 +1,6 @@
+.gradle
+build
+*.zip
+target
+.DS_Store
+.gemcache

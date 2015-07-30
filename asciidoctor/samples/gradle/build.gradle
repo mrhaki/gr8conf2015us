@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+
+        // Optionally add jruby plugin.
+        //classpath 'com.github.jruby-gradle:jruby-gradle-plugin:0.1.5'
+    }
+}
+
+apply plugin: 'org.asciidoctor.convert'
+
+// Optional
+//apply plugin: 'com.github.jruby-gradle.base'
+
+repositories {
+    jcenter()
+}
+
+asciidoctorj {
+    version = '1.5.2'
+}
+
+defaultTasks 'asciidoctor'

@@ -1,0 +1,37 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+    }
+}
+
+// Apply the Asciidoctor Gradle plugin.
+apply plugin: 'org.asciidoctor.convert'
+
+
+asciidoctor {
+
+    // Here we can add the code for extensions we write.
+    extensions {
+
+        // Implementation for inline macro to replace
+        // issue:<issue-id>[] with a link to the issue. 
+        inlinemacro (name: "issue") {
+            parent, target, attributes ->
+ 
+            options = [
+                "type": ":link", 
+                "target": "http://issue-server/browse/${target}".toString()
+            ]
+      
+            // Create the link to the issue.      
+            createInline(parent, "anchor", target, attributes, options).render()
+        }
+ 
+    }    
+}
+
+defaultTasks 'asciidoctor'

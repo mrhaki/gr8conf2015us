@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.0'
+    }
+}
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+
+import org.asciidoctor.gradle.*
+
+repositories.jcenter()
+
+asciidoctorj {
+    version = '1.5.1'
+}
+
+asciidoctor {
+    sourceDir = file('src/asciidoc') 
+}
+
+task presentation(type: AsciidoctorTask) {
+    classpath = project.configurations.asciidoctor
+    sourceDir = file('src/asciidoc')
+    sourceDocumentNames = files('src/asciidoc/presentation.adoc')
+    requires = ['slim', 'thread_safe']
+    options = [
+        template_engine: 'slim',
+        template_dirs: ['../templates']
+    ]
+}
+
+defaultTasks 'presentation'

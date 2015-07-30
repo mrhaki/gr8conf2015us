@@ -1,0 +1,9 @@
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.asciidoctor:asciidoctorj:1.5.0', 'org.kordamp.gipsy:gipsy:0.4.0'
+}

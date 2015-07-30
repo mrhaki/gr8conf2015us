@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+    }
+}
+
+apply plugin: 'org.asciidoctor.convert'
+
+asciidoctor {
+    attributes 'source-highlighter': 'highlightjs'
+    resources {
+    	from(sourceDir) {
+    		include '*.jpg'
+    	}
+    }
+}
+
+defaultTasks 'asciidoctor'

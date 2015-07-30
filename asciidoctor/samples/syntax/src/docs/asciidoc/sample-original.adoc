@@ -1,0 +1,617 @@
+= Sample Asciidoctor
+
+Writing documentation with Asciidoctor is awesome
+sample for Gr8Conf 2015 US.
+
+== Tasks
+
+* Presentation
+* Demo
+
+[TIP]
+Try http://asciidoctor.org[Asciidoctor] and see if you like it
+
+[source,java]
+----
+System.out.println("Some code");
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+=== Level 3
+
+Some more text.
+
+==== Level 4
+
+We are in way deep.
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+.Title for a list
+* Level 1
+** Level 2
+
+.Numbered list
+. Level 1
+. Level 2
+.. Level 2.1
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+Some sample formatting with *bold* and _italic_ text.
+We can also combine them to a *_bolditalic_* text.
+
+Or we want text to be `code`, which is also possible.
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+.Happy
+image::image.jpg[]
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+http://asciidoctor.org
+
+http://asciidoctor.org[Asciidoctor website]
+
+:linkattrs:
+http://asciidoctor.org[Asciidoctor website, window=_blank]
+
+:hide-uri-scheme:
+
+http://asciidoctor.org
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+.Sample table
+|===
+| Column 1 | Column 2
+
+| Row 1-1
+| Row 1-2
+
+| Row 2-1
+| Row 2-2
+
+|===
+
+
+
+[cols="1,1,2", options="header"] 
+|===
+| Column 1 
+| Column 2
+| Takes more space
+
+| Row 1-1
+| Row 1-2
+| Row 1-3
+
+| Row 2-1
+| Row 2-2
+| Row 2-3
+
+|===
+
+
+[format="csv", options="header"]
+.CSV Table
+|===
+Column 1, Column 2
+Row 1.1, Row 1.2
+Row 2.1, Row 2.2
+|===
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+TIP: Simple tip paragraph
+
+WARNING: Do not do this!
+
+NOTE: Remember this...
+
+IMPORTANT: You must read this text.
+
+CAUTION: Please watch out.
+
+
+[TIP]
+====
+For more text than just one paragraph.
+
+We can use a block and apply a type for the block.
+
+In this case a tip.
+====
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+:message: Hello Gr8Conf 2015 US
+
+
+We have defined an attribute with the name
+message and the value: {message}.
+
+Asciidoctor comes with built-in attributes.
+This document is generated with Asciidoctor {asciidoctor-version}
+for example. On {docdatetime}.
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+....
+This is a literal block
+....
+
+++++
+<p>Include HTML <b>unprocessed</b> in the output. 
+The backend must be HTML for this to work.
+</p>
+++++
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+.Source
+----
+package gr8conf2015us
+
+class Sample {
+    static void main(String[] args) {
+        final Sample sample = new Sample()
+    }
+}
+----
+
+
+
+.Groovy source
+[source,groovy]
+----
+package gr8conf2015us
+
+class Sample {
+    static void main(String[] args) {
+        final Sample sample = new Sample()
+    }
+}
+----
+
+
+
+.XML
+[source,xml]
+----
+<?xml version="1.0"?>
+<root>
+    <element>Value</element>
+</root>
+----
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+.Groovy source
+[source,groovy]
+----
+package gr8conf2015us  // <1>
+
+class Sample {
+    static void main(String[] args) {
+        final Sample sample = new Sample()  // <2>
+    }
+}
+----
+<1> Package name reflects conference name.
+<2> Create an instance of `Sample` class.
+
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+:groovySrc: ../../main/groovy
+
+
+[source,groovy]
+----
+include::{groovySrc}/gr8conf2015us/Sample.groovy[]
+----
+
+////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////
+''''
+
+
+[source,groovy]
+----
+include::{groovySrc}/gr8conf2015us/SampleBean.groovy[]
+----
+
+
+////
+
+
+
+

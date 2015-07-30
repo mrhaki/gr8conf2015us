@@ -1,0 +1,7 @@
+= Groovy Inline Macro
+
+Sample document to show extension for Asciidoctor written in Groovy.
+
+With the twitter macro we can create links 
+to the user's Twitter page like twitter:mrhaki[].
+

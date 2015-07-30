@@ -1,0 +1,17 @@
+= Sample Asciidoctor
+
+Writing documentation with Asciidoctor is awesome
+sample for JFall 2014.
+
+== Tasks
+
+* Presentation
+* Demo
+
+[TIP]
+Try http://asciidoctor.org[Asciidoctor] and see if you like it
+
+[source,java]
+----
+System.out.println("Some code");
+----

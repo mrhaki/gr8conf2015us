@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+        classpath 'com.github.jruby-gradle:jruby-gradle-plugin:0.1.5'
+    }
+}
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+apply plugin: 'com.github.jruby-gradle.base'
+
+repositories {
+    jcenter()
+}
+dependencies {
+    gems 'rubygems:asciidoctor-diagram:1.2.0'
+}
+
+asciidoctorj {
+    version = '1.5.2'
+}
+
+asciidoctor {
+    dependsOn jrubyPrepareGems
+    gemPath = jrubyPrepareGems.outputDir
+    requires 'asciidoctor-diagram' 
+    attributes 'imagesdir': './images'
+}
+
+
+defaultTasks 'asciidoctor'
+
