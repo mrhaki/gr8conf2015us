@@ -75,7 +75,7 @@ image:{images}/sample-adoc-output.png[]
 * Groovy, Golo and Ceylon languages
 * Arquillian, Weld and other JBoss sites
 * Book publishers
-* GitHub 
+* https://github.com/mrhaki/gr8conf2015us/blob/master/asciidoctor/src/asciidoc/presentation.adoc[GitHub] 
 
 == Show the code (or documentation)
 
