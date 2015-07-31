@@ -1,0 +1,40 @@
+:backend: revealjs
+:revealjs_theme: jdriven
+:revealjs_control: true
+:revealjs_center: true
+:revealjs_transition: linear
+:source-highlighter: coderay
+
+:images: ./images
+
+== Groovy Goodness
+
+image:{images}/notebook.jpg[]
+
+
+== About me
+
+
+[source]
+----
+['Hubert', 'Alexander', 'Klein', 'Ikkink']
+.inject { alias, name ->
+    alias + name[0].toLowerCase()
+} == 'mrhaki'
+----
+
+* Hubert Klein Ikkink, aka mrhaki
+* Live in The Netherlands
+* Work at http://jdriven.nl[JDriven] as software developer/consultant
+* Messages from mrhaki at http://mrhaki.blogspot.com
+** Groovy, Grails, Gradle, Spock, Asciidoctor
+* Twitter http://www.twitter.com/mrhaki[@mrhaki]
+* Code at https://github.com/mrhaki/gr8conf2015us/groovy-goodness
+* https://leanpub.com/groovy-goodness-notebook[Groovy Goodness Notebook]
+
+
+
+== Show the code
+
+image:{images}/groovy.png[]
+
