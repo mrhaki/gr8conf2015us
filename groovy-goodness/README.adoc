@@ -1,0 +1,26 @@
+= Asciidoctor session at Gr8Conf 2015 US
+
+Presentation and code samples for Awesome Asciidoctor at Gr8Conf 2015 US.
+
+== Presentation
+
+To view the presentation you can open `presentation.html` from the `presentation` directory.
+
+To build the presentation run the following commands:
+
+....
+$ ./gradlew presentation
+:presentation
+
+BUILD SUCCESSFUL
+
+Total time: 6.431 secs
+$ open build/asciidoc/presentation.html
+....
+
+The presentation source is in `src/asciidoc/presentation.adoc`.
+
+
+== Samples
+
+In the `samples` directory we can find the sample shown during the presentation.
